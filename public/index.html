@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="http://fonts.cdnfonts.com/css/museo-sans-cyrl" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+
+    <title>Test English Tochka</title>
+</head>
+<body>
+    <section class="sale-sect">
+        <div class="sale-info">
+            <p id="userLogin"></p>
+            <h3>Ваш баланс:</h3>
+            <div>
+                <img src="img/coin.png" alt="coin" class="coin-max">
+                <span id="userCoins">34</span>
+                <img src="img/monetary.svg" alt="monetary" class="monetary-max">
+            </div>
+            <div id="userProduct">
+                <p>Продукты, которые Вы уже купили:</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="sale-options">
+            <h3>Варианты обмена на скидку</h3>
+            <p class="instruction" id="instruction">Инструкция</p>
+            <div class="sale-options-block">
+                <div class="sale-options-item">
+                    <div class="sale-options-item_price">
+                        <img src="img/coin.png" alt="coin" class="coin-min">
+                        <span>5</span>
+                        <img src="img/monetary.svg" alt="monetary" class="monetary-min">
+                    </div>
+                    <div class="sale-options-item_icon">
+                        <img src="img/phone.svg" alt="phone">
+                    </div>
+                    <div class="sale-options-item_desc">
+                        <span>50%</span> на звонки ST (x2)
+                    </div>
+                    <div class="sale-options-item_btn used" name="1">
+                        Уже <br> использовано
+                    </div>
+                </div>
+                <div class="sale-options-item">
+                    <div class="sale-options-item_price">
+                        <img src="img/coin.png" alt="coin" class="coin-min">
+                        <span>10</span>
+                        <img src="img/monetary.svg" alt="monetary" class="monetary-min">
+                    </div>
+                    <div class="sale-options-item_icon">
+                        <img src="img/book.svg" alt="book">
+                    </div>
+                    <div class="sale-options-item_desc">
+                        <span>30%</span> на спецкурс
+                    </div>
+                    <div class="sale-options-item_btn " name="2">
+                        Использовать <br> скидку
+                    </div>
+                </div>
+                <div class="sale-options-item">
+                    <div class="sale-options-item_price">
+                        <img src="img/coin.png" alt="coin" class="coin-min">
+                        <span>20</span>
+                        <img src="img/monetary.svg" alt="monetary" class="monetary-min">
+                    </div>
+                    <div class="sale-options-item_icon">
+                        <img src="img/books.svg" alt="books">
+                    </div>
+                    <div class="sale-options-item_desc">
+                        <span>50%</span> на курс
+                    </div>
+                    <div class="sale-options-item_btn " name="3">
+                        Использовать <br> скидку
+                    </div>
+                </div>
+                <div class="sale-options-item">
+                    <div class="sale-options-item_price">
+                        <img src="img/coin.png" alt="coin" class="coin-min">
+                        <span>25</span>
+                        <img src="img/monetary.svg" alt="monetary" class="monetary-min">
+                    </div>
+                    <div class="sale-options-item_icon">
+                        <img src="img/books.svg" alt="books">
+                    </div>
+                    <div class="sale-options-item_desc">
+                        <span>65%</span> на курс
+                    </div>
+                    <div class="sale-options-item_btn " name="4">
+                        Использовать <br> скидку
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal_wrapper close_modal">
+        <div class="modal_body">
+            <h2>Инструкция</h2>
+            <p>После публикации сделайте скрин, что вы его написали и отправьте своему куратору, чтобы мы добавили вам
+                спецкурс в личный кабинет.</p>
+            <p>После публикации сделайте скрин, что вы его написали и отправьте своему куратору, чтобы мы добавили вам
+                спецкурс в личный кабинет.</p>
+            <p>После публикации сделайте скрин, что вы его написали и отправьте своему куратору, чтобы мы добавили вам
+                спецкурс в личный кабинет.</p>
+            <p>После публикации сделайте скрин, что вы его написали и отправьте своему куратору, чтобы мы добавили вам
+                спецкурс в личный кабинет.</p>
+            <button class="closeModal">&times;</button>
+        </div>
+    </div>
+
+    <section class="aboutUser-sect">
+        <form onsubmit="sendForm(this); return false;">
+            <label>
+                Логин:
+                <input name="login" type="text" placeholder="Введите логин">
+                <p id="infoUser"></p>
+            </label>
+            <input type="submit" value="Войти">
+        </form>
+    </section>
+
+    <script src="script/script.js"></script>
+
+</body>
+</html>
